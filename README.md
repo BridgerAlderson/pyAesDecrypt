@@ -3,13 +3,18 @@ pyAesDecrypt is a fast, streaming, multi-threaded bruteforce tool for files encr
 
 ## Features
 • Streaming wordlist reader (no need to load huge lists into memory)
+
 • Multi-threaded worker pool for faster attempts
+
 • Thread-safe atomic file handling to avoid corrupted/zero-byte outputs
+
 • ZIP format validation and automatic extraction (--zip) (Optional)
+
 • Configurable progress reporting (-v and --report-every)
 
 ## Requirements
 • Python 3.8+ (or newer)
+
 • pyAesCrypt Python package
 
 ## Usage
