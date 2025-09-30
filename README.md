@@ -13,12 +13,13 @@ pyAesDecrypt is a fast, streaming, multi-threaded bruteforce tool for files encr
 • pyAesCrypt Python package
 
 ## Usage
-python3 pyAesDecrypt.py -w /path/to/wordlist.txt [--zip] [-t THREADS] [-v] encrypted_file.aes
+```python3 pyAesDecrypt.py -w /path/to/wordlist.txt [--zip] [-t THREADS] [-v] encrypted_file.aes```
 
 If the file is also archived in zip format, you can use it as follows:
-python3 pyAesDecrypt.py -w /path/to/wordlist.txt [-t THREADS] [-v] --zip encrypted_file.zip.aes
+
+```python3 pyAesDecrypt.py -w /path/to/wordlist.txt [-t THREADS] [-v] --zip encrypted_file.zip.aes```
 
 ## Proof Of Concept
-`python3 pyAesDecrypt.py -w /usr/share/wordlists/rockyou.txt --zip data.zip.aes -v`
+```python3 pyAesDecrypt.py -w /usr/share/wordlists/rockyou.txt --zip data.zip.aes -v```
 <img width="1173" height="615" alt="image" src="https://github.com/user-attachments/assets/6354fd79-ce27-40da-b1bb-a27674cb2f59" />
 
