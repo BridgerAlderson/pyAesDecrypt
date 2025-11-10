@@ -4,7 +4,7 @@ from queue import Queue,Empty
 
 print(r"""
 ▂▃▅▇█▓▒ pyAesDecrypt ▒▓█▇▅▃▂
-                        ~Bridger
+                            ~Bridger
 """)
 
 found_password=None
@@ -19,7 +19,6 @@ def safe_print(*a,**k):
         sys.stdout.flush()
 
 def is_zip(path):
-    
     try:
         return zipfile.is_zipfile(path)
     except:
@@ -36,10 +35,9 @@ def decrypt_attempt_file(password,input_file,temp_path,buffer_size=64*1024):
         raise
 
 
-def decrypt_attempt_blob(password,encrypted_data,buffer_size=64*1024):
+def decrypt_attempt_blob(password,encrypted_data):
     try:
-        
-        decrypted_data = pyAesCrypt.decryptData(encrypted_data, password, buffer_size)
+        decrypted_data = pyAesCrypt.decryptData(encrypted_data, password)
         return True, decrypted_data
     except ValueError:
         return False, None 
@@ -133,8 +131,8 @@ def worker(q,input_data,final_output_base,thread_id,zip_mode,verbose,report_ever
                         continue
 
                 
-                found_password=pwd
-                safe_print(f"\n[SUCCESS] Password found: {pwd}")
+                found_password=pwd.strip()
+                safe_print(f"\n[SUCCESS] Password found: {pwd.strip()}")
                 safe_print(f"[SUCCESS] Decrypted output: {final_output}")
                 found_event.set()
                 q.task_done()
