@@ -32,11 +32,14 @@ python3 pyAesDecrypt.py -w /usr/share/wordlists/rockyou.txt --blob <DATA-BLOB>
 ```
 ## Proof Of Concept
 **File Mode**
+
 ```bash
 python3 pyAesDecrypt.py -w /usr/share/wordlists/rockyou.txt --zip data.zip.aes -v
 ```
 <img width="1173" height="615" alt="image" src="https://github.com/user-attachments/assets/6354fd79-ce27-40da-b1bb-a27674cb2f59" />
+
 **Blob Mode**
+
 ```bash
 python3 pyAesDecrypt.py -w /usr/share/wordlists/rockyou.txt --blob <DATA-BLOB> -v
 ```
