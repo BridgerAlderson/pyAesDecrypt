@@ -1,4 +1,4 @@
-# pyAesDecrypt -> Dictionary Attack for AES Encrypted Files
+# pyAesDecrypt -> Dictionary Attack for AES Encrypted Data
 pyAesDecrypt is a fast, streaming, multi-threaded bruteforce tool for files or blobs encrypted with pyAesCrypt. It was designed for lab and recovery scenarios: recover lost passwords for files you own or for legally authorized engagements. The tool supports memory-safe streaming of large wordlists, thread-safe decryption attempts using temporary files and atomic rename, automatic ZIP validation and extraction, and configurable progress reporting.
 
 ## Features
