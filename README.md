@@ -43,7 +43,8 @@ python3 pyAesDecrypt.py -w /usr/share/wordlists/rockyou.txt --zip data.zip.aes -
 ```bash
 python3 pyAesDecrypt.py -w /usr/share/wordlists/rockyou.txt --blob <DATA-BLOB> -v
 ```
-<img width="1903" height="507" alt="image" src="https://github.com/user-attachments/assets/b1e44b3e-2aa2-4cfc-9636-10add5902a29" />
+<img width="1741" height="508" alt="image" src="https://github.com/user-attachments/assets/a913b8ca-0e85-48b8-9d4b-4dcee4910f22" />
+
 
 If you want to see which words in the wordlist have been tried, use double verbose (-vv):
 ```bash
